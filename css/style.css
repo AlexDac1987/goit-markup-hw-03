@@ -2,6 +2,22 @@
   --link-color: #212121;
   --accent-color: #2196f3;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -11,8 +27,24 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
+
+.section {
+  padding: 94px 0px;
 }
 
 .link {
@@ -20,6 +52,19 @@ button {
 }
 
 /*-----------------------------Header-------------------------------------*/
+
+.header {
+  padding: 24px 0px;
+  border: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+}
 
 .header-logo {
   font-weight: 700;
@@ -34,6 +79,27 @@ button {
   color: #2196f3;
 }
 
+.header-logo-top {
+  margin-right: 93px;
+  padding: 24px 0px 25px 0px;
+}
+
+.header-links {
+  padding: 32px 0px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-list {
+  display: flex;
+}
+
 .header-link,
 .contacts-email {
   font-weight: 500;
@@ -41,6 +107,15 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-color);
+}
+
+.contacts {
+  display: flex;
+  padding: 32px 0px;
+}
+
+.contacts-list {
+  margin-right: 50px;
 }
 
 .header-link:hover,
@@ -82,6 +157,10 @@ button {
   background-color: #2f303a;
 }
 
+.hero-content {
+  padding: 200px 252px 200px 252px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -91,9 +170,12 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #303030;
+  margin-bottom: 30px;
 }
 
 .hero-button {
+  min-width: 200px;
+  height: 50px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -105,6 +187,10 @@ button {
   letter-spacing: 0.06em;
   background: #2196f3;
   color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 200;
 }
 
 /*-------------------------------Advantages-----------------------------*/
@@ -115,7 +201,23 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item:not(:first-child) {
+  margin-left: 30px;
+  max-width: 270px;
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+}
+
 .advantages-content {
   font-weight: 400;
   font-size: 14px;
@@ -131,7 +233,44 @@ button {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+/*-------------------------------Team-----------------------------*/
+
+.team {
+  background: #f5f4fa;
+  padding: 94px 0px;
+}
+
+.team-inside {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-inside:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-title {
+  padding: 30px 0px;
 }
 
 .team-title {
@@ -140,6 +279,8 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .team-list-item {
@@ -147,7 +288,9 @@ button {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
+  margin-bottom: 10px;
 }
 
 .team-list-position {
@@ -155,6 +298,7 @@ button {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #757575;
 }
 
@@ -177,6 +321,24 @@ button {
 
 .footer {
   background-color: #2f303a;
+  padding: 50px 0px;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-logo-bot {
+  margin-bottom: 20px;
+}
+
+.footer-list-item {
+  margin-bottom: 9px;
 }
 
 .footer-addres {
@@ -185,6 +347,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-email {
@@ -203,7 +366,21 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.contacts-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 /*-------------------------------Buttons -----------------------------*/
+
+.navi-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 .hidden {
   position: absolute;
@@ -218,15 +395,27 @@ button {
   margin: -1px;
 }
 
+.navi-buttons-box {
+  min-width: 611px;
+}
+
 .navi-button {
+  margin-left: 8px;
+  padding: 6px 22px;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
+  border: none;
+}
+
+.second-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 /*------------------------------Examples -----------------------------*/
@@ -237,6 +426,18 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
+}
+
+.examples-list {
+  box-sizing: border-box;
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.examples-text {
+  padding: 20px 24px;
 }
 
 .examples-link {
