@@ -40,7 +40,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 .section {
@@ -170,7 +169,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #303030;
-  margin-bottom: 30px;
+  margin-bottom: 0 auto 30px;
 }
 
 .hero-button {
@@ -253,7 +252,7 @@ img {
   padding: 94px 0px;
 }
 
-.team-inside {
+.team-list-pics {
   width: 270px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -261,7 +260,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-inside:not(:first-child) {
+.team-list-pics:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -433,11 +432,13 @@ img {
   box-sizing: border-box;
   width: 370px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
 .examples-text {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .examples-link {
@@ -446,4 +447,5 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+  text-decoration: none;
 }
