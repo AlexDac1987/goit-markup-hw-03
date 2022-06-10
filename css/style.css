@@ -29,6 +29,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -72,27 +74,20 @@ img {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .header-logo-blue {
   color: #2196f3;
 }
 
-.header-logo-top {
-  margin-right: 93px;
-  padding: 24px 0px 25px 0px;
-}
-
-.header-links {
-  padding: 32px 0px;
-}
-
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-contacts {
+.header-item {
   margin-left: auto;
+  padding: 8px 0px;
 }
 
 .header-list {
@@ -110,7 +105,8 @@ img {
 
 .contacts {
   display: flex;
-  padding: 32px 0px;
+  margin-left: 331px;
+  padding: 8px 0px;
 }
 
 .contacts-list {
@@ -142,7 +138,8 @@ img {
   background: #2196f3;
 }
 
-.contacts-phone {
+.contacts-phone,
+.contacts-email {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -154,10 +151,8 @@ img {
 
 .hero {
   background-color: #2f303a;
-}
-
-.hero-content {
-  padding: 200px 252px 200px 252px;
+  padding: 200px 0px;
+  box-sizing: border-box;
 }
 
 .hero-title {
@@ -227,6 +222,10 @@ img {
 
 /*-------------------------------About-----------------------------*/
 
+.about {
+  padding-top: 0px;
+}
+
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -266,6 +265,18 @@ img {
 
 .team-list {
   display: flex;
+}
+
+.team-list-pics {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-pics:not(:first-child) {
+  margin-left: 30px;
 }
 
 .team-list-title {
@@ -330,14 +341,16 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
-}
-
-.footer-logo-bot {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
 .footer-list-item {
   margin-bottom: 9px;
+}
+
+.footer-list-item:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-addres {
@@ -379,6 +392,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  min-width: 611px;
 }
 
 .hidden {
@@ -394,12 +408,11 @@ img {
   margin: -1px;
 }
 
-.navi-buttons-box {
-  min-width: 611px;
+.navi-button-list:not(:first-child) {
+  margin-left: 8px;
 }
 
 .navi-button {
-  margin-left: 8px;
   padding: 6px 22px;
   font-family: inherit;
   font-style: normal;
@@ -409,6 +422,7 @@ img {
   text-align: center;
   color: #212121;
   border: none;
+  border-radius: 4px;
 }
 
 .second-list {
